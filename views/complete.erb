@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,23 +42,23 @@
             <tbody>
                 <tr>
                     <% company = params['company'] %>
-                    <p> 会社名：<%= company %> </p>
+                    <th>会社名：<%= company %></th>
                 </tr>
                 <tr>
                     <% name = params['name'] %>
-                    <p> 氏名：<%= name %> </p>
+                    <th>氏名：<%= name %></th>
                 </tr>
                 <tr>
                     <% mail = params['mail'] %>
-                    <p> メール：<%= mail %> </p>
+                    <th>メール：<%= mail %></th>
                 </tr>
                 <tr>
                     <% tel = params['tel'] %>
-                    <p> 電話番号：<%= tel %> </p>
+                    <th>電話番号：<%= tel %></th>
                 </tr>
                 <tr>
                     <% content = params['content'] %>
-                    <p> 内容：<%= content.gsub(/\r\n|\r|\n/,"<br>") %> </p>
+                    <th>内容：<%= content.gsub(/\r\n|\r|\n/,"<br>") %></th>
                 </tr>
             </tbody>
         </table>
